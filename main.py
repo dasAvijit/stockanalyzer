@@ -11,7 +11,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Analysis App')
 
-selected_stock = st.selectbox('Select dataset for prediction', STOCK.STOCKS)
+selected_stock = st.selectbox('Select dataset for viewing', STOCK.STOCKS)
 
 @st.cache
 def load_data(ticker):
